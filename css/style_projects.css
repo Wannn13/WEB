@@ -1,0 +1,166 @@
+h1, h2, h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+nav, h2, h3, h4, p{
+  font-family: 'Roboto', sans-serif;
+}
+
+p{
+  color: #555555;
+}
+
+h2{
+  font-size: 40px;
+}
+
+span{
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+span:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  background-color: #ffd800;
+}
+
+.btn{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px 45px;
+  margin: auto;
+  border-radius: 50rem;
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
+  background-color: #ffd800;
+}
+
+
+/* Navbar */
+nav .nav-link{
+  font-size: 20px;
+  color: #555555;
+}
+
+nav a:hover{
+  color: #ffd800 !important;
+}
+
+
+/* OUR PROJECTS */
+.our-projects .text {
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+.our-projects p{
+  font-size: 15px;
+}
+
+.our-projects .button{
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+
+/* CARD */
+.card{
+  margin: 30px auto;
+  border-radius: 25px;
+  max-width: 250px;
+  min-height: 450px;
+  border: none;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.25);
+}
+
+.card .img-desktop{
+  max-width: 200px;
+  height: auto;
+}
+
+.card .img-mobile{
+  width: 150px;
+  height: auto;
+}
+
+.card-text , h4{
+  padding: 10px;
+  text-align: left;
+}
+
+h4{
+  font-weight: bold;
+}
+
+.card-text{
+  font-size: 14px;
+}
+
+
+
+
+
+/* TABLET VERSION */
+@media (min-width: 700px){
+
+  .card{
+    width: 200px;
+    min-height: 500px;
+  }
+
+  .card .img-desktop{
+    width: 150px;
+    height: auto;
+  }
+
+  .card .img-mobile{
+    width: 90px;
+    height: auto;
+  }
+
+}
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+  .our-projects .text {
+    min-width: 800px;
+    height: auto;
+    margin: auto;
+  }
+
+  .our-projects p{
+    font-size: 20px;
+  }
+
+  .card{
+    min-width: 320px;
+    min-height: 560px;
+  }
+
+  .card .img-desktop{
+    min-width: 250px;
+    height: auto;
+  }
+
+  .card .img-mobile{
+    width: 150px;
+    height: auto;
+  }
+
+  .card-text{
+    font-size: 17px;
+  }
+
+}

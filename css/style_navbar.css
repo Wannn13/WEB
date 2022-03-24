@@ -1,0 +1,114 @@
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .5s;
+}
+.icon-sosmed-header{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 13px;
+    background-color: #ffd800;
+    border-radius: 50px;
+    box-shadow: 2px 1px .1px 1px rgba(0, 0, 0, 0.1);
+}
+.icon-sosmed-header img{
+    width: 28px;
+    top: 50%;
+    left: 50%;
+    transform: translate(40%, 35%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body  {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #fff;
+    color: #555;
+    display: flex;
+    right: 0;
+    left: 0;
+    /* width: 100%;
+    height: auto; */
+    justify-content: space-around;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 30px 15px 20px 15px;
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+    color: black;
+}
+nav .openMenu, .closeMenu{
+    color: #000;
+}
+nav .mainMenu .closeMenu{
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+.icon-sosmed-header{
+    display: none;
+}
+nav .logo {
+    /* margin-top: 30px; */
+    margin: 20px 100px 0 -30px;
+    cursor: pointer;
+}
+
+@media(max-width: 992px){
+    nav .logo{
+        margin: 20px 150px 20px 20px;
+    }
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        justify-content: center;
+        align-items: left;
+        background-color: #fff;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 5%;
+        right: 11%;
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a {
+        text-transform: uppercase;
+        background: none;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .icon-sosmed-header{
+        display: inline-block;
+        /* padding: 12px; */
+    }
+}

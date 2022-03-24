@@ -1,0 +1,216 @@
+h1, h2, h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+nav, h3, h4, p{
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  font-size: 40px;
+}
+
+span{
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+span:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  background-color: #ffd800;
+}
+
+.btn{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px 45px;
+  border-radius: 50rem;
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
+  background-color: #ffd800;
+}
+
+
+/* Navbar */
+nav .nav-link{
+  font-size: 20px;
+  color: #555555;
+}
+
+nav a:hover{
+  color: #ffd800 !important;
+}
+
+
+/* ABOUT */
+.about p{
+  max-width: 340px;
+  height: auto;
+}
+.about video{
+  width: 290px;
+  height: 160px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.about .rectangle{
+  max-width: 120px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  display: none;
+}
+
+
+/* OUR PROGRAM */
+.our-program-box{
+  color: #fff !important;
+  max-width: 260px;
+  height: 460px;
+  padding: 30px;
+  margin: 20px auto;
+  border-radius: 25px;
+  background-image: url(../img/img-our-program.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.our-program-box::after{
+  content:'';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+  position: absolute;
+  bottom:0;
+  right: 0;
+  left: 0;
+}
+
+.text{
+  margin-top: 180px;
+  position: relative;
+  z-index: 2;
+}
+
+.our-program p{
+  font-size: 17px;
+}
+
+
+
+/* JOIN US */
+.join-us{
+  margin: auto;
+  margin-top: 150px !important;
+  max-width: 500px;
+  height: auto;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 3px -3px 5px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.join-us h2{
+  font-size: 32px !important;
+}
+
+.join-us .btn{
+  margin-top: 20px;
+}
+
+
+.box{
+  z-index: 1;
+  position: absolute;
+  margin-top: -100px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(0, 0, 0);
+  }
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+
+  /* ABOUT */
+  .about p{
+    max-width: 500px;
+    height: auto;
+    font-size: 20px;
+    color: #555555;
+  }
+
+  .about video{
+    width: 407px;
+    height: 237px;
+    border-radius: 15px;
+    margin: 20px;
+  }
+
+  .about .rectangle{
+    max-width: 400px;
+    height: auto;
+    margin: -5% 0 0 -18%;
+    display: inline;
+  }
+
+
+  /* FIELD */
+  .field .field-box{
+    width: 350px;
+    height: auto;
+    margin: auto;
+  }
+
+  .field img{
+    margin-bottom: 20px;
+  }
+
+  .field p{
+    font-size: 20px;
+    color: #555555;
+  }
+
+
+  /* OUR PROGRAM */
+  .our-program-box{
+    min-width: 300px;
+    height: 500px;
+    margin: auto;
+  }
+
+  .text{
+    margin-top: 250px;
+  }
+
+
+  /* JOIN US */
+  .join-us{
+    min-width: 1200px;
+    height: auto;
+    padding: 30px;
+  }
+
+  .join-us h2{
+    font-size: 40px !important;
+  }
+
+
+
+}

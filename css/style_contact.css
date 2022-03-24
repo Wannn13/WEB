@@ -1,0 +1,167 @@
+h1, h2, h5{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+nav, h3, h4, p{
+  font-family: 'Roboto', sans-serif;
+}
+
+h2{
+  font-size: 40px;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  color: #555555;
+}
+
+span{
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+span:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: 0;
+  background-color: #ffd800;
+}
+
+.btn{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px 45px;
+  margin: auto;
+  border-radius: 50rem;
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
+  background-color: #ffd800;
+}
+
+.btn-send{
+  font-size: 20px;
+  font-weight: bold;
+  padding: 12px 150px;
+  margin: auto;
+  border-radius: 10px;
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1); */
+  background-color: #ffd800;
+  color: #000;
+}
+
+a:hover{
+  color: #000;
+}
+
+/* Navbar */
+nav .nav-link{
+  font-size: 20px;
+  color: #555555;
+}
+
+nav a:hover{
+  color: #ffd800 !important;
+}
+
+
+.contact .text {
+  max-width: 400px;
+  height: auto;
+  margin: auto;
+}
+
+
+/* JOIN US */
+.join-us{
+  margin: auto;
+  margin-top: 150px !important;
+  max-width: 500px;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  box-shadow: 3px -3px 5px 3px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+
+.join-us h2{
+  font-size: 32px !important;
+}
+
+.join-us .btn{
+  margin-top: 20px;
+}
+
+
+.box{
+  z-index: 1;
+  position: absolute;
+  margin-top: -100px;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(0, 0, 0);
+  }
+
+
+
+
+
+
+/* TABLET VERSION */
+@media (min-width: 700px){
+  .btn-send{
+    padding: 12px 300px;
+  }
+
+  .join-us{
+    max-width: 600px;
+    height: auto;
+  }
+
+}
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px){
+  
+  .form{
+    margin: auto;
+    width: 1000px;
+    height: auto;
+  }
+
+  .contact .text {
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+  }
+
+  /* JOIN US */
+  .join-us{
+    min-width: 1200px;
+    height: auto;
+    padding: 30px;
+  }
+
+  .join-us h2{
+    font-size: 40px !important;
+  }
+
+  .form-control{
+    background-color: #dddddd;
+  }
+
+  .btn-send{
+    padding: 12px 462px;
+  }
+
+}
